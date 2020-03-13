@@ -1,0 +1,72 @@
+.beijing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.beijingImg {
+  width: 100%;
+  height: 100%;
+}
+
+.cont {
+    display: flex;
+    height:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contTitle{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+.contTitleImg{
+  width:25px;
+  margin-right: 10px;
+}
+.contBiaoti {
+  margin: 0 auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  line-height: 200px;
+}
+
+.contAnniu {
+    text-align: center;
+    margin: 0 40px;
+}
+
+.contAnniuA{
+  position: relative;
+  width: 349px;
+  height: 358px;
+  margin: auto;
+  display: block;
+}
+
+.contAnniuASpan {
+  position: absolute;
+  bottom: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  line-height: 80px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contFooter {
+  font-size: 16px;
+  text-shadow: 1px 1px 2px #999999;
+  color: #ffffff;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  line-height: 100px;
+  font-weight: normal;
+}

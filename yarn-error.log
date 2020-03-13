@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add antd
+
+PATH: 
+  /Users/angel/flutter/bin/cache/dart-sdk/bin:/Users/angel/flutter/bin:/usr/local/opt/sphinx-doc/bin:/usr/local/opt/libxml2/bin:/usr/local/bin:/usr/local/sbin:/Users/angel/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/Users/angel/Library/Android/sdk/tools:/Users/angel/Library/Android/sdk/tools/bin:/Users/angel/Library/Android/sdk/platform-tools:/Users/angel/Library/Android/sdk/emulator:/Users/angel/GOHOME/bin:/usr/local/Cellar/go/1.13.4/libexec/bin:/Users/angel/Library/Android/sdk/tools:/Users/angel/Library/Android/sdk/tools/bin:/Users/angel/Library/Android/sdk/platform-tools:/Users/angel/Library/Android/sdk/emulator:/Users/angel/.rvm/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  12.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EINVAL: invalid argument, unlink '/Users/angel/jiefu/electron-dva-example/node_modules/dom-serializer/node_modules/domelementtype'
+
+npm manifest: 
+  {
+    "private": true,
+    "main": "main.js",
+    "scripts": {
+      "start": "roadhog server && electron .",
+      "build": "roadhog build",
+      "lint": "eslint --ext .js src test",
+      "precommit": "npm run lint"
+    },
+    "dependencies": {
+      "dva": "^2.4.1",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0"
+    },
+    "devDependencies": {
+      "babel-plugin-dva-hmr": "^0.3.2",
+      "eslint": "^4.14.0",
+      "eslint-config-umi": "^0.1.1",
+      "eslint-plugin-flowtype": "^2.34.1",
+      "eslint-plugin-import": "^2.6.0",
+      "eslint-plugin-jsx-a11y": "^5.1.1",
+      "eslint-plugin-react": "^7.1.0",
+      "husky": "^0.12.0",
+      "redbox-react": "^1.4.3",
+      "roadhog": "^2.5.0-beta.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
