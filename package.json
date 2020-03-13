@@ -1,16 +1,28 @@
 {
   "private": true,
   "main": "main.js",
+  "name": "electron-dva-example",
+  "version": "0.0.2",
   "homepage": ".",
   "scripts": {
     "start": "roadhog server ",
     "electron:start": "electron .",
-    "electron:build": "rm -rf ./../out && electron-packager ~/jiefu/electron-dva-example/dist 高岭土预估工具 --platfo.gitlab-ci.ymrm=darwin --arch=x64 --out=./../out --ar --app-version=0.0.1 --electron-version=8.1.1",
+    "electron:build": "rm -rf ./out && electron-packager ~/jiefu/electron-dva-example/dist 高岭土预估工具 --platfo.gitlab-ci.ymrm=darwin --arch=x64 --out=./out --ar --app-version=0.0.1 --electron-version=8.1.1",
     "build": "roadhog build && cp ./packager/** ./dist/",
+    "app:build": "./node_modules/.bin/electron-builder --prepackaged ./out/高岭土预估工具-darwin-x64",
     "lint": "eslint --ext .js src test",
     "precommit": "npm run lint",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "sister-project.id",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "directories": {
+      "output": "build"
+    }
   },
   "dependencies": {
     "antd": "^3.26.13",
@@ -32,11 +44,5 @@
     "husky": "^0.12.0",
     "redbox-react": "^1.4.3",
     "roadhog": "^2.5.0-beta.4"
-  },
-  "build": {
-    "appId": "your.id",
-    "mac": {
-      "category": "your.app.category.type"
-    }
   }
 }
