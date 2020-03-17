@@ -1,0 +1,9 @@
+directories:
+  output: build
+  buildResources: build
+appId: sister-project.id
+mac:
+  category: your.app.category.type
+win:
+  icon: ./logo.ico
+electronVersion: 8.1.1

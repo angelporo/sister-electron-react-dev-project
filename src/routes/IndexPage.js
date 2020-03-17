@@ -14,19 +14,24 @@ const openNotification = placement => {
 const Home = props => {
   const {dispatch} = props;
   return (
-    <div className={style.cont}>
+    <div
+      style={{
+        background: "url(./images/background.png) no-repeat center center ",
+      }}
+      className={style.cont}
+    >
       <div className={style.contAnniu}>
         <Link to="/counter" className={style.contAnniuA}>
-          <img src="./images/a1.png" />
+          <img style={{marginTop: "93px"}} src="./images/icon01.png" />
           <span className={style.contAnniuASpan}>矿物成分预估</span>
         </Link>
       </div>
-      <div className={style.contAnniu}>
+      <div className={style.contAnniuB}>
         <a
           className={style.contAnniuA}
           onClick={() => openNotification("topRight")}
         >
-          <img src="./images/a2.png" />
+          <img style={{marginTop: "93px"}} src="./images/icon02.png" />
           <span className={style.contAnniuASpan}>成分预估标准修改</span>
         </a>
       </div>

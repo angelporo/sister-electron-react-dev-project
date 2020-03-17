@@ -7,9 +7,11 @@
   "scripts": {
     "start": "roadhog server ",
     "electron:start": "electron .",
-    "electron:build": "rm -rf ./out && electron-packager ~/jiefu/electron-dva-example/dist 高岭土预估工具 --platfo.gitlab-ci.ymrm=darwin --arch=x64 --out=./out --ar --app-version=0.0.1 --electron-version=8.1.1",
+    "electron:build:macos": "rm -rf ./out && electron-packager ~/jiefu/electron-dva-example/dist 高岭土预估工具 --platfo.gitlab-ci.ymrm=darwin --arch=x64 --out=./out --ar --app-version=0.0.1 --electron-version=8.1.1",
+    "electron:build:win": "rm -rf ./out && electron-packager ~/jiefu/electron-dva-example/dist 高岭土预估工具 --platform=win32 --out=./out --app-version=0.0.1 --electron-version=8.1.1",
     "build": "roadhog build && cp ./packager/** ./dist/",
     "app:build": "./node_modules/.bin/electron-builder --prepackaged ./out/高岭土预估工具-darwin-x64",
+    "app:build:win": "./node_modules/.bin/electron-builder ./out/高岭土预估工具-win32-x64 --win --x64",
     "lint": "eslint --ext .js src test",
     "precommit": "npm run lint",
     "pack": "electron-builder --dir",
@@ -19,6 +21,9 @@
     "appId": "sister-project.id",
     "mac": {
       "category": "your.app.category.type"
+    },
+    "win": {
+      "icon": "./logo.ico"
     },
     "directories": {
       "output": "build"
